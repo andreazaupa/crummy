@@ -104,7 +104,7 @@ module Crummy
                                local_global.call(crumb, options, :right_separator))
           end
         end.compact.join.html_safe
-        crumb_string = content_tag(:ol,
+        crumb_string = content_tag(:ul,
                                    crumb_string + crumb_right_string,
                                    class: options[:ol_class],
                                    id: options[:ol_id])
